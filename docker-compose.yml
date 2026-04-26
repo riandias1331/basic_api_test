@@ -1,0 +1,12 @@
+services:
+  app:
+    # Build indica que o Dockerfile está dentro da pasta backend
+    build: ./backend
+    container_name: mert_backend
+    ports:
+      - "5000:5000"
+    # Indica ao Docker onde está o ficheiro .env
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/src:/app/src
