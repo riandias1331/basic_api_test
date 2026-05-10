@@ -5,7 +5,6 @@ const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 
-// CONFIGURAÇÃO DO EJS (O que faltava)
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
